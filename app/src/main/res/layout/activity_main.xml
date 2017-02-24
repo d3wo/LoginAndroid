@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.loginandroid.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/loadRepositories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Repositories"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/loadUserData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load user data"
+        android:gravity="center"
+        android:layout_above="@id/loadRepositories"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/txtView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/loadUserData" />
+
+
+</RelativeLayout>
